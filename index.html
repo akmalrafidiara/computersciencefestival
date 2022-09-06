@@ -5,8 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Computer Science Festival 2022</title>
+  <link rel="icon" href="asset/csf-logo.png">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="asset/CheGuevaraBarry-Brown.ttf">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <nav>
@@ -21,14 +23,14 @@
     </div>
   </nav>
   <section class="banner">
-    <h3>Lets Start The Journey With Us</h3>
-    <h1>COMPUTER SCIENCE FESTIVAL</h1>
-    <H2>"Go To a New Era With Business and Technology"</H2>
+    <h3 data-aos="zoom-in-down" data-aos-duration="3000">Lets Start The Journey With Us</h3>
+    <h1 data-aos="zoom-in-up" data-aos-duration="3000">COMPUTER SCIENCE FESTIVAL</h1>
+    <H2 data-aos="fade-up"data-aos-duration="3000">"Go To a New Era With Business and Technology"</H2>
     <a href="#competition">Next</a>
     <!-- <img src="asset/Artboard 2.svg" alt=""> -->
   </section>
   <section class="competition" id="competition">
-    <h1 class="title-comp">Competition</h1>
+    <h1 class="title">Competition</h1>
     <div class="card-comp">
       <div class="card-text">
         <h1>UI/UX MOBILE<br>Competition</h1>
@@ -44,7 +46,7 @@
     </div>
     <div class="card-comp">
       <div class="card-text">
-        <h1>UI/UX MOBILE<br>Competition</h1>
+        <h1>Business Model Canvas Competition</h1>
         <p>Merupakan suatu kompetisi design tetntang pembuatan suatu mockup uplikasi yang menerapkan prinsip UI/UX. UI/UX Mobile Competition dapat diikuti oleh Mahasiswa aktif baik itu D3/D4/S1, Setiap tim wajib beranggotakan  3-5 yang berasal dari institusi atau universitas yang sama  </p>
         <div class="card-link">
           <a href="#">Daftar Sekarang</a>
@@ -52,18 +54,18 @@
         </div>
       </div>
       <div class="card-img">
-        <img src="asset/UIUX_Poster.png" alt="">
+        <img src="asset/BMC_Poster.png" alt="">
       </div>
     </div>
   </section>
-  <section class="timeline">
-    <h1>Timeline</h1>
+  <section class="timeline" id="timeline">
+    <h1 class="title">Timeline</h1>
     <div class="timeline-content">
       <div class="dotdot">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+        <span class="line"></span>
+        <span class="dot dot-1"></span>
+        <span class="dot dot-2"></span>
+        <span class="dot dot-3"></span>
       </div>
       <div class="timeline-wrap">
         <div class="timeline-card">
@@ -81,5 +83,9 @@
       </div>
     </div>
   </section>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

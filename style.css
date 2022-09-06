@@ -2,11 +2,13 @@
   font-family: "CheGuevara Barry Brown";
   src: url("asset/CheGuevaraBarry-Brown.ttf") format("truetype");
 }
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'CheGuevara Barry Brown';
+  /* font-family: 'CheGuevara Barry Brown'; */
+  font-family:  'Poppins', sans-serif;
   text-decoration: none;
   scroll-behavior: smooth;
 }
@@ -41,6 +43,7 @@ nav {
 }
 .navbar a {
   color: #fff;
+  font-family: 'CheGuevara Barry Brown';
   font-size: 26px;
 }
 .banner {
@@ -56,6 +59,7 @@ nav {
   margin: 30px 0px;
 }
 .banner h3 {
+  font-family: 'CheGuevara Barry Brown';
   font-size: 48px;
 }
 .banner h1 {
@@ -73,18 +77,14 @@ nav {
   color: #fff;
   background: #6B64C7;
   font-size: 40px;
+  font-family: 'CheGuevara Barry Brown';
   margin-top: 50px;
-}
-.banner img {
-  position: absolute;
-  top: -150px;
-  z-index: -1;
 }
 .competition {
   width: 100%;
   padding: 200px;
 }
-.competition .title-comp {
+.title {
   color: #fff;
   text-align: center;
   margin-bottom: 100px;
@@ -116,11 +116,13 @@ nav {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border-radius: 30px;
 }
 .card-text h1 {
   font-size: 80px;
   font-weight: bold;
+  line-height: 75px;
 }
 .card-text p {
   font-size: 30px;
@@ -137,6 +139,11 @@ nav {
   width: 49%;
   padding: 30px 0px;
   border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.card-link a:hover {
+  filter: invert(0.1);
 }
 .card-link a:first-child {
   color: #fff;
@@ -145,4 +152,71 @@ nav {
 .card-link a:nth-child(2) {
   color: #18002B;
   background: #8EE1EE;
+}
+.timeline {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+.timeline-content {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.dotdot {
+  width: 20%;
+  position: relative;
+}
+.line {
+  width: 5px;
+  height: 70%;
+  background-color: #fff;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.dot {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  background-color: #FCE085; 
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.dot-1 {
+  top: 10%;
+}
+.dot-2 {
+  transform: translate(-50%, -50%);
+  top: 50%;
+}
+.dot-3 {
+  top: 80%;
+}
+.timeline-wrap {
+  width: 80%;
+}
+.timeline-card {
+  width: 100%;
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,0.4780287114845938) 0%, rgba(255,255,255,0.2679446778711485) 100%);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11.6px);
+  -webkit-backdrop-filter: blur(11.6px);
+  padding: 30px 50px;
+  margin-bottom: 30px;
+}
+.timeline-card h2 {
+  font-size: 40px;
+}
+.timeline-card h3 {
+  font-size: 35px;
+  color: #FCE085;
 }
