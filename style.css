@@ -1,0 +1,148 @@
+@font-face{
+  font-family: "CheGuevara Barry Brown";
+  src: url("asset/CheGuevaraBarry-Brown.ttf") format("truetype");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'CheGuevara Barry Brown';
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+.container {
+  width: 80%;
+}
+body {
+  background-image: url('asset/BG-WEB-2.svg');
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: 100%;
+}
+nav {
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,0.09987745098039214) 0%, rgba(255,255,255,0.021446078431372584) 100%);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 10px 200px;
+  color: #fff;
+}
+.logo img {
+  width: 120px;
+}
+.navbar {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar a {
+  color: #fff;
+  font-size: 26px;
+}
+.banner {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  align-items: center;
+  padding: 100px 0px;
+  position: relative;
+  text-align: center;
+}
+.banner h3, .banner h1, .banner h2 {
+  margin: 30px 0px;
+}
+.banner h3 {
+  font-size: 48px;
+}
+.banner h1 {
+  font-size: 80px;
+  font-weight: bold;
+  color: #65E517;
+}
+.banner h2 {
+  font-size: 48px;
+  font-style: italic;
+}
+.banner a {
+  padding: 10px 60px;
+  border-radius: 50px;
+  color: #fff;
+  background: #6B64C7;
+  font-size: 40px;
+  margin-top: 50px;
+}
+.banner img {
+  position: absolute;
+  top: -150px;
+  z-index: -1;
+}
+.competition {
+  width: 100%;
+  padding: 200px;
+}
+.competition .title-comp {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 100px;
+  font-size: 40px;
+}
+.card-comp {
+  background: rgba(255, 255, 255, 0.31);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11.6px);
+  -webkit-backdrop-filter: blur(11.6px);
+  color: #fff;
+  width: 100%;
+  padding: 100px 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.card-text, .card-img {
+  width: 50%;
+}
+.card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-comp img{
+  width: 60%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 30px;
+}
+.card-text h1 {
+  font-size: 80px;
+  font-weight: bold;
+}
+.card-text p {
+  font-size: 30px;
+  margin: 20px 0px;
+  text-align: justify;
+}
+.card-link {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.card-link a {
+  width: 49%;
+  padding: 30px 0px;
+  border-radius: 10px;
+}
+.card-link a:first-child {
+  color: #fff;
+  background: #6B64C7;
+}
+.card-link a:nth-child(2) {
+  color: #18002B;
+  background: #8EE1EE;
+}
