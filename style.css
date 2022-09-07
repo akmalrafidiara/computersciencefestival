@@ -340,6 +340,9 @@ footer a:hover {
     display: block;
     z-index: 1;
   }
+  .title {
+    margin-top: 200px;
+  }
   .banner h1 {
     font-size: 40px;
     margin: 5px 0px;
@@ -353,7 +356,7 @@ footer a:hover {
   }
   .banner a {
     padding: 5px 30px;
-    margin-top: 0px;
+    margin-top: 60px;
     font-size: 30px;
   }
   .card-comp {
